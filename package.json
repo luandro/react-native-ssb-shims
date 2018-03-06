@@ -1,5 +1,5 @@
 {
-  "name": "react-native-ssb-shims",
+  "name": "@luandro/react-native-ssb-shims",
   "version": "2.0.0",
   "description": "Node.js-related shims necessary for the SSB ecosystem to run on React Native apps",
   "main": "index.js",
@@ -10,23 +10,18 @@
   },
   "scripts": {
     "do-propagate": "propagate-replacement-fields --field=react-native --source=$(dirname $(realpath -s $0)) --destination=$(dirname $(realpath -s $0))/../../",
-    "do-link": "cd $(dirname $(realpath -s $0))/../../ && react-native link react-native-randombytes && react-native link react-native-crypto && react-native link react-native-fs && react-native link react-native-os && react-native link react-native-tcp && cd $(dirname $(realpath -s $0))",
-    "do-patch": "patch-package",
-    "install": "npm run do-propagate && npm run do-link && npm run do-patch"
+    "install": "npm run do-propagate"
   },
   "author": "Andre Staltz",
   "license": "MIT",
-  "devDependencies": {
-    "patch-package": "^5.0.0"
-  },
   "dependencies": {
     "@staltz/react-native-os": "1.2.0",
     "buffer": "3.6.0",
     "path": "0.12.x",
     "propagate-replacement-fields": "1.2.0",
-    "multiserver": "1.10.1",
     "react-native-crypto": "2.1.2",
     "react-native-fs": "2.3.x",
+    "react-native-multiserver": "^1.11.2",
     "react-native-process-shim": "1.0.1",
     "react-native-randombytes": "3.0.0",
     "react-native-tcp": "3.3.x",

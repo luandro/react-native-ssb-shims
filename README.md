@@ -4,6 +4,12 @@ Node.js-related shims necessary for the SSB ecosystem to run on React Native app
 
 ## usage
 
+First link all deps.
+
+```js
+react-native link react-native-randombytes && react-native link react-native-crypto && react-native link react-native-fs && react-native link react-native-os && react-native link react-native-tcp
+```
+
 Just import it in your project's index.js:
 
 ```js
