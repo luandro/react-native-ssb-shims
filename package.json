@@ -20,7 +20,7 @@
     "path": "0.12.x",
     "propagate-replacement-fields": "1.2.0",
     "react-native-crypto": "2.1.2",
-    "react-native-fs": "2.3.x",
+    "react-native-fs": "^2.9.11",
     "react-native-multiserver": "^1.11.2",
     "react-native-process-shim": "1.0.1",
     "react-native-randombytes": "3.0.0",
