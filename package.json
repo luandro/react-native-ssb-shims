@@ -36,7 +36,7 @@
     "chloride": "sodium-browserify-tweetnacl",
     "fs": false,
     "net": "rn-tcp",
-    "react-native-os": "rn-os",
+    "rn-os": "rn-os",
     "os": "rn-os",
     "stream": "stream-browserify",
     "process": "react-native-process-shim",
