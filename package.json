@@ -9,8 +9,9 @@
     "url": "https://github.com/ssbc/react-native-ssb-shims"
   },
   "scripts": {
+    "do-link": "cd $(dirname $(realpath -s $0))/../../ && react-native link react-native-randombytes && react-native link react-native-crypto && react-native link react-native-fs && react-native link rn-os && react-native link rn-tcp && cd $(dirname $(realpath -s $0))",
     "do-propagate": "propagate-replacement-fields --field=react-native --source=$(dirname $(realpath -s $0)) --destination=$(dirname $(realpath -s $0))/../../",
-    "install": "npm run do-propagate"
+    "install": "npm run do-propagate && npm run do-link"
   },
   "author": "Andre Staltz",
   "license": "MIT",
